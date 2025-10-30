@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@yandex/ymaps3-default-ui-theme/dist/esm/index.css';
+
+html {
+	height: 100%;
+	overflow-y: scroll;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+:root {
+	--space-sm: calc(var(--space) / 1.5);
+	--space: 16px;
+}
+
+@media (min-width: 768px) {
+	:root {
+		--space: 20px;
+	}
+}
+
+@media (min-width: 1024px) {
+	:root {
+		--space: 24px;
+	}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+*::selection {
+	@apply bg-primary text-white;
+}
