@@ -6,8 +6,8 @@ export interface IPort {
 		rating: number;
 		shipsInServe: number;
 		shipsThroughput: number;
-		waterPollution: number;
-		airPollution: number;
+		waterPollution: [number, number, number];
+		airPollution: [number, number, number];
 		incidentCount: number;
 		latitude: number;
 		longitude: number;
@@ -19,5 +19,13 @@ export interface IPort {
 		text: string;
 		stars: number;
 		OffsetDateTime: string;
-	}>;
+	}> | null;
+	files: Array<{
+		id: number;
+		author: string;
+		text: string;
+		stars: -1;
+		createdAt: string;
+		portId: number;
+	}> | null;
 }

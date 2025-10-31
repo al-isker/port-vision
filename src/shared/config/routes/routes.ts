@@ -9,7 +9,6 @@ class Routes {
 	// clientUpdate = (id: Id) => `${this.clients()}/form/${id}`;
 
 	port = () => '/port';
-	portMain = () => `${this.port()}?tab=water`;
 	portById = (id: Id) => `${this.port()}/${id}`;
 }
 

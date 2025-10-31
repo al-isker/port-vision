@@ -33,7 +33,7 @@ export const Paper = ({
 			},
 			sx
 		)}
-		className={clsx('shadow-md', className, {
+		className={clsx('shadow-lg', className, {
 			'gap-space-sm p-space-sm': !disablePadding
 		})}
 		{...restProps}

@@ -1,15 +1,14 @@
 import { ReactNode, Suspense } from 'react';
 
 import { Header } from '@/widgets/header/Header';
-import { Main } from '@/widgets/main/Main';
 
 const MainLayout = ({ children }: Readonly<{ children: ReactNode }>) => (
-	<>
+	<div className='flex h-full flex-col bg-primary/10'>
 		<Header />
-		<Main>
+		<div className='scrollable flex-grow overflow-y-scroll'>
 			<Suspense>{children}</Suspense>
-		</Main>
-	</>
+		</div>
+	</div>
 );
 
 export default MainLayout;

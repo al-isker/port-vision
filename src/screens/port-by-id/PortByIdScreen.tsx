@@ -2,7 +2,7 @@
 
 import { PortBody } from './PortBody';
 
-export const PortScreen = () => (
+export const PortByIdScreen = () => (
 	<div className='h-full space-y-space'>
 		<PortBody />
 	</div>

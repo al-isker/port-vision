@@ -10,7 +10,7 @@ const IndexPage: NextPage = () => {
 	const router = useRouter();
 
 	useEffect(() => {
-		router.replace(ROUTES.portMain());
+		router.replace(ROUTES.port());
 	}, []);
 
 	return null;

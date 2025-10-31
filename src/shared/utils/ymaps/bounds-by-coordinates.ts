@@ -18,8 +18,8 @@ export const getBoundsByCoordinates = (coordinates: LngLat[]) => {
 	const maxLat = Math.max(...latCoordinates);
 
 	const bounds: LngLatBounds = [
-		[minLng / 1.001, minLat / 1.001],
-		[maxLng * 1.001, maxLat * 1.001]
+		[minLng / 1.05, minLat / 1.05],
+		[maxLng * 1.05, maxLat * 1.05]
 	];
 
 	return bounds;

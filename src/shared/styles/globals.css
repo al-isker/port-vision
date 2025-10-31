@@ -4,15 +4,10 @@
 
 @import '@yandex/ymaps3-default-ui-theme/dist/esm/index.css';
 
-html {
-	height: 100%;
-	overflow-y: scroll;
-}
-
+html,
 body {
+	overflow-y: hidden;
 	height: 100%;
-	display: flex;
-	flex-direction: column;
 }
 
 :root {

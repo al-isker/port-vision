@@ -6,7 +6,7 @@ export const SIDEBAR_NAVIGATION_LINKS = [
 	{
 		title: 'Мониториг',
 		matchValue: ROUTES.port(),
-		href: ROUTES.portMain(),
+		href: ROUTES.port(),
 		icon: <Equalizer />
 	}
 	// {

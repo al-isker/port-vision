@@ -17,9 +17,11 @@ export const HeaderRootLink = () => {
 			className={clsx('transition-[margin] duration-300', {
 				'ml-space-sm': !isOpen
 			})}
-			href={ROUTES.portMain()}
+			href={ROUTES.port()}
 		>
-			<Typography variant='h1'>Port Vision</Typography>
+			<Typography className='max-md:!text-[1.6rem]' variant='h1'>
+				Port Vision
+			</Typography>
 		</Link>
 	);
 };

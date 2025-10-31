@@ -21,32 +21,6 @@ const config: Config = {
 			xl: `${BREAKPOINTS.xl}px`
 		},
 
-		colors: {
-			transparent: 'transparent',
-
-			primary: 'rgb(var(--mui-palette-primary-mainChannel) / <alpha-value>)',
-			'primary-light':
-				'rgb(var(--mui-palette-primary-lightChannel) / <alpha-value>)',
-			'primary-dark':
-				'rgb(var(--mui-palette-primary-darkChannel) / <alpha-value>)',
-
-			secondary:
-				'rgb(var(--mui-palette-secondary-mainChannel) / <alpha-value>)',
-			'secondary-light':
-				'rgb(var(--mui-palette-secondary-lightChannel) / <alpha-value>)',
-			'secondary-dark':
-				'rgb(var(--mui-palette-secondary-darkChannel) / <alpha-value>)',
-
-			white:
-				'rgb(var(--mui-palette-background-defaultChannel) / <alpha-value>)',
-
-			black: 'rgb(var(--mui-palette-text-primaryChannel) / <alpha-value>)',
-
-			'always-white': 'rgb(255 255 255 / <alpha-value>)',
-			'always-black': 'rgb(18 18 18 / <alpha-value>)',
-			'always-blackest': 'rgb(0 0 0 / <alpha-value>)'
-		},
-
 		fontFamily: FONT_FAMILY,
 
 		borderRadius: {
@@ -61,6 +35,32 @@ const config: Config = {
 			spacing: {
 				'space-sm': 'var(--space-sm)',
 				space: 'var(--space)'
+			},
+
+			colors: {
+				transparent: 'transparent',
+
+				primary: 'rgb(var(--mui-palette-primary-mainChannel) / <alpha-value>)',
+				'primary-light':
+					'rgb(var(--mui-palette-primary-lightChannel) / <alpha-value>)',
+				'primary-dark':
+					'rgb(var(--mui-palette-primary-darkChannel) / <alpha-value>)',
+
+				secondary:
+					'rgb(var(--mui-palette-secondary-mainChannel) / <alpha-value>)',
+				'secondary-light':
+					'rgb(var(--mui-palette-secondary-lightChannel) / <alpha-value>)',
+				'secondary-dark':
+					'rgb(var(--mui-palette-secondary-darkChannel) / <alpha-value>)',
+
+				white:
+					'rgb(var(--mui-palette-background-defaultChannel) / <alpha-value>)',
+
+				black: 'rgb(var(--mui-palette-text-primaryChannel) / <alpha-value>)',
+
+				'always-white': 'rgb(255 255 255 / <alpha-value>)',
+				'always-black': 'rgb(18 18 18 / <alpha-value>)',
+				'always-blackest': 'rgb(0 0 0 / <alpha-value>)'
 			},
 
 			boxShadow: {
