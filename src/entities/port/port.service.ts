@@ -264,7 +264,8 @@ class PortService {
 			port: {
 				id: 3,
 				name: 'Порт Актау',
-				description: 'Порт Актау там тут в гораде',
+				description:
+					'Морской порт Актау (Казахстан) расположен на восточном побережье Каспийского моря в точке пересечения нескольких международных транспортных коридоров, что позволяет обеспечивать перевозку сухих грузов, сырой нефти и нефтепродуктов с востока на запад, с севера на юг и обратно в направлении Ирана, Турции, России,  Азербайджана, Туркменистана.',
 				rating: 7.0,
 				shipsInServe: 34.0,
 				shipsThroughput: 32.0,
@@ -274,7 +275,7 @@ class PortService {
 				latitude: 43.6017835,
 				longitude: 51.218085,
 				imageUrl:
-					'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3DsqWkxxg_hI9MsuM-a0ehaZX9nR2UtIX6A&s'
+					'https://www.kmg.kz/upload/cache_img/1280_1280/iblock/0bd/ztxgzv7jjgf40cp32er04k079hahlza3/photo1702273487.webp'
 			},
 			comments: [
 				{

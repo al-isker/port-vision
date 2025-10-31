@@ -56,13 +56,13 @@ export const PortBodyView = ({ port }: Props) => {
 					{port.port.name}
 				</Typography>
 
-				{port.port.description.includes('там тут') && (
+				{!port.port.description.includes('там тут') && (
 					<span className='mt-0.5 block text-xs text-black/60'>
 						{port.port.description}
 					</span>
 				)}
 
-				<img className='mt-2 size-full rounded-sm' src={port.port.imageUrl} />
+				<img className='mt-2.5 size-full rounded-sm' src={port.port.imageUrl} />
 
 				<PortSubscribe id={port.port.id} />
 			</Paper>
@@ -74,6 +74,18 @@ export const PortBodyView = ({ port }: Props) => {
 					</MapViewRow>
 
 					<MapViewRow label='Кол-во инцидентов'>
+						{port.port.incidentCount}
+					</MapViewRow>
+
+					<MapViewRow label='Загрязнённость воды'>
+						{port.port.waterPollution[0] * 5} TDS
+					</MapViewRow>
+
+					<MapViewRow label='Загрязнённость воды'>
+						{port.port.airPollution[0] * 5} AQI
+					</MapViewRow>
+
+					<MapViewRow label='Загрязнённость воздуха'>
 						{port.port.incidentCount}
 					</MapViewRow>
 
