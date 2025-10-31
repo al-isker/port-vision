@@ -279,12 +279,20 @@ class PortService {
 			},
 			comments: [
 				{
-					id: 53,
-					author: 'Абдоб',
-					text: 'abdob',
+					id: 1,
+					author: 'Алискер Бабаев',
+					text: 'Порт бомба чесно говоря',
 					stars: 5,
-					createdAt: '2025-10-30T21:25:42.933653Z',
-					portId: 3
+					createdAt: '2025-10-30T16:00:39.580942Z',
+					portId: 1
+				},
+				{
+					id: 2,
+					author: 'Гасан Омаров',
+					text: 'Стреляют, спать не дают',
+					stars: 4,
+					createdAt: '2025-10-30T16:00:39.580942Z',
+					portId: 1
 				}
 			],
 			files: [

@@ -2,7 +2,9 @@
 
 import { useState } from 'react';
 
-import { Rating } from '@mui/material';
+import { AccountCircle } from '@mui/icons-material';
+import { Divider, Rating } from '@mui/material';
+import dayjs from 'dayjs';
 
 import { MapView } from '@/ui/MapView';
 import { MapViewRow } from '@/ui/MapViewItem';
@@ -14,6 +16,7 @@ import { Typography } from '@/ui/Typography';
 import { IPort } from '@/entities/port/port.type';
 
 import { PortBodyMap } from './PortBodyMap';
+import { PortCreateComment } from './PortCreateComment';
 import { PortSubscribe } from './PortSubscribe';
 
 interface Props {
@@ -96,16 +99,39 @@ export const PortBodyView = ({ port }: Props) => {
 			</Paper>
 
 			<Paper className='!m-space-sm'>
-				<Typography variant='h3' className='!text-[1rem]'>
+				<Typography variant='h3' className='!text-[1rem]' gutterBottom>
 					Комментарии
 				</Typography>
 
-				<div>
-					{port.comments?.map(item => (
-						<div />
+				<div className='flex flex-col gap-y-1'>
+					{port.comments?.map((item, index) => (
+						<>
+							<div className='flex items-center gap-x-4 p-1'>
+								<AccountCircle fontSize='large' />
+								<div className='flex flex-col'>
+									<div className='flex h-full items-center space-x-3'>
+										<span className='text-gray-900 font-medium'>
+											{item.author}
+										</span>
+
+										<span className='text-gray-500 text-sm'>
+											{dayjs(item.OffsetDateTime).format('h:mm DD MMMM')}
+										</span>
+									</div>
+
+									<p className='text-gray-700 leading-relaxed'>{item.text}</p>
+								</div>
+							</div>
+
+							{index !== port.comments!.length - 1 && <Divider />}
+						</>
 					))}
 				</div>
+
+				<PortCreateComment id={port.port.id} />
 			</Paper>
+
+			<div className='h-40' />
 		</>
 	);
 };
