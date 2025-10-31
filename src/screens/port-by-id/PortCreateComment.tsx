@@ -20,7 +20,8 @@ export const PortCreateComment = ({ id }: Props) => {
 		defaultValues: {
 			author: '',
 			text: '',
-			portId: id
+			portId: id,
+			stars: 10
 		}
 	});
 
